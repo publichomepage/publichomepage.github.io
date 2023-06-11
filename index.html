@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Have your own Public Home Page domain</title>
+        <title>Have your PublicHome Page link</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -50,13 +50,13 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Your Public Homepage is Your secret sauce!</h2>
+                        <h2 class="text-white mb-4">Your PublicHome.Page is Your secret sauce!</h2>
                         <p class="text-white-50">
-                            Having your public presence can takeoff your business or facevalue to millions. It is easy to build and can be yours right now, simply contact us, we are here to help.
+                            Having a strong public presence can elevate your business or face value to millions. It is easy to integrate yours right now. Simply contact us and we are here to help.
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+                <!--img class="img-fluid" src="assets/img/ipad.png" alt="..." /-->
             </div>
         </section>
         <!-- Projects-->
@@ -67,8 +67,8 @@
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Who are using ?</h4>
-                            <p class="text-black-50 mb-0">Number of crypto projects are being built and published with Public Homepage!</p>
+                            <h4>Who is it designed for ?</h4>
+                            <p class="text-black-50 mb-0">It can be for professionals, celebrities, traders or social enthusiasts. Various social to professional projects are being built and published with a public homepage!</p>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">One Page for all</h4>
-                                    <p class="mb-0 text-white-50">Games, Discord, Restaurant, Shop or your own social connections all in here one page that users want to see</p>
+                                    <p class="mb-0 text-white-50">Your connections, videos, articles, any cart of crafts, all in here one page that users want to see.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -94,8 +94,8 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Affordable</h4>
-                                    <p class="mb-0 text-white-50">You can afford one it's easy, affordable with  quick support!</p>
+                                    <h4 class="text-white">Effortless</h4>
+                                    <p class="mb-0 text-white-50">It's simple to build, integrate and manage ! unlike expensive, complex and  time consuming platforms!</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -110,9 +110,9 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <h2 class="text-white mb-5">Connect to request your's</h2>
                         <!-- to get an API token!-->
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN" action="sendMessage()">
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
                                 <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
@@ -126,8 +126,7 @@
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
+                                    <div class="fw-bolder">Thank you for your interest!</div>
                                     <br />
                                     <a href=""></a>
                                 </div>
@@ -150,7 +149,7 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; publichome.page 2022</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; publichome.page</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -161,4 +160,22 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
+    <script>
+        function sendMessage() {
+
+            var emailId = document.getElementById("emailAddress").textContent();
+          var request = new XMLHttpRequest();
+          request.open("POST", "https://discord.com/api/webhooks/1117578287477178398/isE41_Ypvj-ekevc4abrmtmOyecZuG1bzzrHbNKQphhk3XLMxl-6OqsAPpOee45I2oXT");
+    
+          request.setRequestHeader('Content-type', 'application/json');
+    
+          var params = {
+            username: email,
+            avatar_url: "",
+            content: "Hi,\n I am interested to learn more on this opportunity.\nThanks"
+          }
+    
+          request.send(JSON.stringify(params));
+        }
+      </script>
 </html>
