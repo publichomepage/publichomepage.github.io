@@ -14,6 +14,24 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            function sendMessage() {
+    
+                var emailId = document.getElementById("emailAddress").textContent();
+              var request = new XMLHttpRequest();
+              request.open("POST", "https://discord.com/api/webhooks/1117578287477178398/isE41_Ypvj-ekevc4abrmtmOyecZuG1bzzrHbNKQphhk3XLMxl-6OqsAPpOee45I2oXT");
+        
+              request.setRequestHeader('Content-type', 'application/json');
+        
+              var params = {
+                username: email,
+                avatar_url: "",
+                content: "Hi,\n I am interested to learn more on this opportunity.\nThanks"
+              }
+        
+              request.send(JSON.stringify(params));
+            }
+          </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -160,22 +178,4 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
-    <script>
-        function sendMessage() {
-
-            var emailId = document.getElementById("emailAddress").textContent();
-          var request = new XMLHttpRequest();
-          request.open("POST", "https://discord.com/api/webhooks/1117578287477178398/isE41_Ypvj-ekevc4abrmtmOyecZuG1bzzrHbNKQphhk3XLMxl-6OqsAPpOee45I2oXT");
-    
-          request.setRequestHeader('Content-type', 'application/json');
-    
-          var params = {
-            username: email,
-            avatar_url: "",
-            content: "Hi,\n I am interested to learn more on this opportunity.\nThanks"
-          }
-    
-          request.send(JSON.stringify(params));
-        }
-      </script>
 </html>
