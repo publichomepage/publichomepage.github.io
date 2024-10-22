@@ -118,8 +118,8 @@
     }
   };
 
-  var parseResults = function(results, isFinal) {
-    invokeCallbacks(callbacks.result, results, isFinal);
+  var parseResults = function(results, isFinal, timeStamp) {
+    invokeCallbacks(callbacks.result, results, isFinal, timeStamp);
     var commandText;
     // go over each of the 5 results and alternative results received (we have set maxAlternatives to 5 above)
     for (let i = 0; i < results.length; i++) {
@@ -643,7 +643,7 @@
           results[k] = SpeechRecognitionResult[k].transcript;
         }
 
-        parseResults(results, SpeechRecognitionResult.isFinal);
+        parseResults(results, SpeechRecognitionResult.isFinal, event.timeStamp);
       };
 
       // build commands list
